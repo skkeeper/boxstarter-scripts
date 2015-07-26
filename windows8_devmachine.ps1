@@ -13,7 +13,7 @@ $Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a
 # Allow running PowerShell scripts
 Update-ExecutionPolicy Unrestricted
 
-Set-TaskbarSmall
+Set-TaskbarOptions -Size Small -Lock -Dock Top
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
@@ -26,10 +26,10 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region DotNetAndPowershell
-  cinstm -y PowerShell
-  cinstm -y DotNet4.0
-  cinstm -y DotNet4.5
-  cinstm -y mono
+  cinst -y PowerShell
+  cinst -y DotNet4.0
+  cinst -y DotNet4.5
+  cinst -y mono
 #endregion
 
 #region Runtimes
