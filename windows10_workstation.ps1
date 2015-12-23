@@ -39,6 +39,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y everything
   cinst -y notepadplusplus.install
   cinst -y notepad2
+  cinst -y hashcheck
 #endregion
 
 #region productivity
