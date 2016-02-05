@@ -32,8 +32,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region Runtimes
   cinst -y flashplayerplugin
-  cinst -y java.jdk
+  cinst -y jdk
   cinst -y nodejs.install
+  # TODO: Investigate way of installing python 2 and 3 at the same time
   cinst -y python
   cinst -y scriptcs
 #endregion
@@ -46,11 +47,12 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y irfanviewplugins
   cinst -y sumatrapdf
   cinst -y mpc-hc
-  cinst -y ccleaner
+  # cinst -y ccleaner
   cinst -y defraggler
   cinst -y treesizefree
-  # cinst -y classic-shell
+  cinst -y classic-shell
   cinst -y everything
+  cinst -y hashcheck
 #endregion
 
 #region Browsers
@@ -81,6 +83,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y Paint.net
   #cinst -y sharex
   cinst -y unchecky
+  cinst -y ffmpeg
+  cinst -y youtube-dl
+  cinst -y icaros
 #endregion
 
 # Make sure some windows update didn't creep on us after installing all
