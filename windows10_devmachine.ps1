@@ -70,6 +70,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   #cinst -y androidstudio
   cinst -y winmerge
   #cinst -y smartgit
+  cinst -y hxd
 #endregion
 
 #region games
