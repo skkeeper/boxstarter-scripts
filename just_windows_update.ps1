@@ -1,5 +1,5 @@
-# Commandline: START http://boxstarter.org/package/nr/url?
-# Internet Explorer: http://boxstarter.org/package/url?
+# Commandline: START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/just_windows_update.ps1
+# Internet Explorer: http://boxstarter.org/package/url?https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/just_windows_update.ps1
 
 # The following settings will ask you for your windows password and then
 # successfuly reboot the machine everytime it needs to. After Boxstarter is
