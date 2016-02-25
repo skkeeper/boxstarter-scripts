@@ -73,10 +73,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y hxd
 #endregion
 
-#region games
-  #cinst -y steam
-#endregion
-
 #region goingIntoTheExtras
   #cinst -y hexchat
   cinst -y libreoffice
@@ -93,3 +89,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
 # those apps
 Install-WindowsUpdate -acceptEula
 if (Test-PendingReboot) { Invoke-Reboot }
+
+# Taskbar items
+Install-ChocolateyPinnedTaskBarItem "$env:localappdata\Google\Chrome\Application\chrome.exe"
