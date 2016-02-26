@@ -53,6 +53,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y classic-shell
   cinst -y everything
   cinst -y hashcheck
+  cinst -y foobar2000
 #endregion
 
 #region Browsers
@@ -63,7 +64,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #region devTools
   #cinst -y cmder
   cinst -y notepadplusplus.install
-  cinst -y notepad2
+  cinst -y notepad2-mod
   #cinst -y SublimeText3
   #cinst -y sublimetext3-contextmenu
   #cinst -y pycharm-community
