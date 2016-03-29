@@ -83,7 +83,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y unchecky
   cinst -y ffmpeg
   cinst -y youtube-dl
-  cinst -y icaros
+  #cinst -y icaros
 #endregion
 
 # Make sure some windows update didn't creep on us after installing all
