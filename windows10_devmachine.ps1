@@ -84,6 +84,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y ffmpeg
   cinst -y youtube-dl
   #cinst -y icaros
+  cinst -y zeal.install
 #endregion
 
 # Make sure some windows update didn't creep on us after installing all
