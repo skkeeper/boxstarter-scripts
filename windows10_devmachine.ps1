@@ -54,6 +54,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y everything
   cinst -y hashcheck
   cinst -y foobar2000
+  cinst -y mediainfo
 #endregion
 
 #region Browsers
