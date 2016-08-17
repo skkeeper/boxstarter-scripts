@@ -11,7 +11,7 @@ $Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a
 # Allow running PowerShell scripts
 Update-ExecutionPolicy Unrestricted
 
-Set-TaskbarOptions -Size Small -Lock -Dock Top
+Set-TaskbarOptions -Size Small -Locka -Dock Top
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
@@ -44,7 +44,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y 7zip.install
   cinst -y sysinternals
   cinst -y irfanview
-  cinst -y irfanviewplugins
+  # Removed from chocolatey
+  #cinst -y irfanviewplugins
   cinst -y sumatrapdf
   cinst -y mpc-hc
   # cinst -y ccleaner
