@@ -11,7 +11,7 @@ $Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a
 # Allow running PowerShell scripts
 Update-ExecutionPolicy Unrestricted
 
-Set-TaskbarOptions -Size Small -Locka -Dock Top
+Set-TaskbarOptions -Size Small -Lock -Dock Top
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
