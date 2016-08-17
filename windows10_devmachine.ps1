@@ -88,6 +88,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y youtube-dl
   #cinst -y icaros
   cinst -y zeal.install
+  cinst -y patheditor
 #endregion
 
 # Make sure some windows update didn't creep on us after installing all
