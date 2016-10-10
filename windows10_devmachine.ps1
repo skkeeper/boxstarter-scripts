@@ -11,6 +11,12 @@ $Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a
 # Allow running PowerShell scripts
 Update-ExecutionPolicy Unrestricted
 
+# Power Options - disable hibernation and disable monitor standby
+Write-Host "Configuring power options..."
+powercfg -change -monitor-timeout-ac 0
+powercfg -change -standby-timeout-ac 0
+powercfg -h off
+
 Set-TaskbarOptions -Size Small -Lock -Dock Top
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
