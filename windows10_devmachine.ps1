@@ -12,8 +12,11 @@ $Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a
 Update-ExecutionPolicy Unrestricted
 
 Set-TaskbarOptions -Size Small -Lock -Dock Top
-Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar
+Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
+
+# Disables the Bing Internet Search when searching from the search field in the Taskbar or Start Menu.
+Disable-BingSearch
 
 # Install Windows Update and reboot
 Install-WindowsUpdate -acceptEula
