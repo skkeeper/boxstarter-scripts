@@ -87,7 +87,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y unchecky
   cinst -y ffmpeg
   cinst -y youtube-dl
-  #cinst -y icaros
+  cinst -y icaros
   cinst -y zeal.install
   cinst -y patheditor
 #endregion
