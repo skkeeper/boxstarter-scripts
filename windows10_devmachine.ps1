@@ -88,6 +88,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region goingIntoTheExtras
+  cinst -y chocolateygui
   #cinst -y hexchat
   cinst -y libreoffice
   #cinst -y foxitreader
