@@ -67,6 +67,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediainfo
   cinst -y mediainfo-cli
   cinst -y mediatab
+  cinst -y rsync
 #endregion
 
 #region Browsers
