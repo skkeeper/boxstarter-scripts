@@ -67,7 +67,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediainfo
   cinst -y mediainfo-cli
   cinst -y mediatab
-  cinst -y rsync
+  cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
 #endregion
 
 #region Browsers
