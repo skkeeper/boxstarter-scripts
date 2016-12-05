@@ -53,8 +53,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y 7zip.install
   cinst -y sysinternals
   cinst -y irfanview
-  # Removed from chocolatey
-  #cinst -y irfanviewplugins
+  cinst -y irfanviewplugins
   cinst -y sumatrapdf
   cinst -y mpc-hc
   # cinst -y ccleaner
