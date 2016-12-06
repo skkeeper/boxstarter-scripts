@@ -102,6 +102,12 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y patheditor
 #endregion
 
+#region nirsoft
+  cinst -y csvfileview
+  cinst -y bluescreenview
+  cinst -y hashmyfiles
+#endregion
+
 # Make sure some windows update didn't creep on us after installing all
 # those apps
 Install-WindowsUpdate -acceptEula
