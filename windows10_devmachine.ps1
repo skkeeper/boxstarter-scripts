@@ -100,6 +100,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y icaros
   cinst -y zeal.install
   cinst -y patheditor
+  cinst -y winscp.install
 #endregion
 
 #region nirsoft
