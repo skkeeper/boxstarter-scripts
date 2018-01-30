@@ -1,5 +1,5 @@
-# Commandline: START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/windows10_devmachine.ps1
-# Internet Explorer: http://boxstarter.org/package/url?https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/windows10_devmachine.ps1
+# . { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
+# Install-BoxstarterPackage -PackgeName https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/windows10_devmachine.ps1 -DisableReboots
 
 # The following settings will ask you for your windows password and then
 # successfuly reboot the machine everytime it needs to. After Boxstarter is
