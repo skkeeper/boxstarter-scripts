@@ -1,5 +1,6 @@
+# RUN COMMANDS BELLOW IN POWERSHELL
 # . { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
-# Install-BoxstarterPackage -PackgeName https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/windows10_devmachine.ps1 -DisableReboots
+# Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/skkeeper/boxstarter-scripts/master/windows10_devmachine.ps1 -DisableReboots
 
 # The following settings will ask you for your windows password and then
 # successfuly reboot the machine everytime it needs to. After Boxstarter is
@@ -50,13 +51,12 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region essentials
   cinst -y vlc
+  cinst -y mpc-hc
   cinst -y 7zip.install
   cinst -y sysinternals
   cinst -y irfanview
   cinst -y irfanviewplugins
   cinst -y sumatrapdf
-  cinst -y mpc-hc
-  # cinst -y ccleaner
   cinst -y defraggler
   cinst -y treesizefree
   cinst -y classic-shell
@@ -68,11 +68,12 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediatab
   cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
   cinst -y putty.install
+  # cinst -y ccleaner
 #endregion
 
 #region Browsers
   cinst -y google-chrome-x64
-  #cinst -y firefox -installArgs l=en-GB
+  cinst -y firefox -installArgs l=en-GB
 #endregion
 
 #region devTools
@@ -99,7 +100,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y ffmpeg
   cinst -y youtube-dl
   cinst -y icaros
-  cinst -y zeal.install
+  #cinst -y zeal.install
   cinst -y patheditor
   cinst -y winscp.install
 #endregion
