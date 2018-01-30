@@ -92,9 +92,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #region goingIntoTheExtras
   cinst -y chocolateygui
   #cinst -y hexchat
-  cinst -y libreoffice
+  cinst -y libreoffice-fresh
   #cinst -y foxitreader
-  cinst -y Paint.net
+  cinst -y paint.net
   #cinst -y sharex
   cinst -y unchecky
   cinst -y ffmpeg
