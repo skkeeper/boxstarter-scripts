@@ -87,6 +87,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y winmerge
   #cinst -y smartgit
   cinst -y hxd
+  cinst -y dbeaver
 #endregion
 
 #region goingIntoTheExtras
