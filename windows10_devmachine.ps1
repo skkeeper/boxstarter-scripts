@@ -37,22 +37,22 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y PowerShell
   cinst -y DotNet4.0
   cinst -y DotNet4.5
-  cinst -y mono
+  # cinst -y mono
 #endregion
 
 #region Runtimes
   cinst -y flashplayerplugin
-  cinst -y jdk9
-  cinst -y nodejs.install
+  cinst -y jdk11
+  cinst -y nodejs
   # TODO: Investigate way of installing python 2 and 3 at the same time
   cinst -y python
-  cinst -y scriptcs
+  # cinst -y scriptcs
 #endregion
 
 #region essentials
+  cinst -y 7zip
   cinst -y vlc
   cinst -y mpc-hc
-  cinst -y 7zip.install
   cinst -y sysinternals
   cinst -y irfanview
   cinst -y irfanviewplugins
@@ -67,7 +67,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediainfo-cli
   cinst -y mediatab
   cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
-  cinst -y putty.install
+  cinst -y putty
   # cinst -y ccleaner
 #endregion
 
@@ -78,12 +78,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region devTools
   #cinst -y cmder
-  cinst -y notepadplusplus.install
+  cinst -y notepadplusplus
   cinst -y notepad2-mod
-  #cinst -y SublimeText3
-  #cinst -y sublimetext3-contextmenu
-  #cinst -y pycharm-community
-  #cinst -y androidstudio
   cinst -y winmerge
   #cinst -y smartgit
   cinst -y hxd
@@ -101,9 +97,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y ffmpeg
   cinst -y youtube-dl
   cinst -y icaros
-  #cinst -y zeal.install
   cinst -y patheditor
-  cinst -y winscp.install
+  cinst -y winscp
   cinst -y pencil
 #endregion
 
