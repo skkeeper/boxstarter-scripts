@@ -81,7 +81,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y notepadplusplus
   cinst -y notepad2-mod
   cinst -y winmerge
-  #cinst -y smartgit
   cinst -y hxd
   cinst -y dbeaver
 #endregion
@@ -97,9 +96,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y ffmpeg
   cinst -y youtube-dl
   cinst -y icaros
-  cinst -y patheditor
+  #cinst -y patheditor
   cinst -y winscp
-  cinst -y pencil
 #endregion
 
 #region nirsoft
