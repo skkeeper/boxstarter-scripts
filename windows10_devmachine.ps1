@@ -59,7 +59,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y sumatrapdf
   cinst -y defraggler
   cinst -y treesizefree
-  cinst -y classic-shell
+  # cinst -y classic-shell
   cinst -y everything
   cinst -y hashcheck
   cinst -y foobar2000
