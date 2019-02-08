@@ -98,6 +98,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y icaros
   #cinst -y patheditor
   cinst -y winscp
+  cinst -y quicklook
 #endregion
 
 #region nirsoft
