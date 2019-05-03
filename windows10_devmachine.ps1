@@ -42,7 +42,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region Runtimes
   cinst -y flashplayerplugin
-  cinst -y jdk11
+  cinst -y openjdk
   cinst -y nodejs
   # TODO: Investigate way of installing python 2 and 3 at the same time
   cinst -y python
