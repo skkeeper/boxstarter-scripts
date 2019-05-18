@@ -73,8 +73,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region Browsers
-  cinst -y google-chrome-x64
-  cinst -y firefox -installArgs l=en-GB
+  cinst -y google-chrome
+  cinst -y firefox --params "l=en-GB"
 #endregion
 
 #region devTools
