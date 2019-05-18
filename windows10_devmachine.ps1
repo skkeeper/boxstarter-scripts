@@ -68,6 +68,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediatab
   cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
   cinst -y putty
+  cinst -y kitty
   # cinst -y ccleaner
 #endregion
 
