@@ -90,7 +90,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y chocolateygui
   #cinst -y hexchat
   cinst -y libreoffice-fresh
-  #cinst -y foxitreader
+  cinst -y FoxitReader
   cinst -y paint.net
   #cinst -y sharex
   cinst -y unchecky
