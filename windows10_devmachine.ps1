@@ -96,6 +96,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y unchecky
   cinst -y ffmpeg
   cinst -y youtube-dl
+  cinst -y Wget
   cinst -y icaros
   #cinst -y patheditor
   cinst -y winscp
