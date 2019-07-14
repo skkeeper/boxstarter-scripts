@@ -84,7 +84,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y winmerge
   cinst -y hxd
   cinst -y dbeaver
-  cinst -y spring-boot-cli
+  cinst -y spring-boot-cli --ignoredependencies # spring-boot-cli depends on jdk, but it might not match the one we installed earlier in this script, so we ignore it
   cinst -y maven
 #endregion
 
