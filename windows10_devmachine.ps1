@@ -84,6 +84,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y winmerge
   cinst -y hxd
   cinst -y dbeaver
+  cinst -y spring-boot-cli
+  cinst -y maven
 #endregion
 
 #region goingIntoTheExtras
