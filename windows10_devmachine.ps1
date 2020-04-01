@@ -82,6 +82,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y notepadplusplus
   cinst -y notepad2-mod
   cinst -y winmerge
+  cinst -y meld
   cinst -y hxd
   cinst -y dbeaver
   cinst -y spring-boot-cli --ignoredependencies # spring-boot-cli depends on jdk, but it might not match the one we installed earlier in this script, so we ignore it
@@ -91,6 +92,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region goingIntoTheExtras
   cinst -y chocolateygui
+  cinst -y powertoys
   #cinst -y hexchat
   cinst -y libreoffice-fresh
   cinst -y FoxitReader
