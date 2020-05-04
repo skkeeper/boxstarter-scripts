@@ -37,16 +37,13 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y PowerShell
   cinst -y DotNet4.0
   cinst -y DotNet4.5
-  # cinst -y mono
 #endregion
 
 #region Runtimes
   cinst -y flashplayerplugin
   cinst -y openjdk
   cinst -y nodejs
-  # TODO: Investigate way of installing python 2 and 3 at the same time
   cinst -y python
-  # cinst -y scriptcs
 #endregion
 
 #region essentials
@@ -59,7 +56,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y sumatrapdf
   cinst -y defraggler
   cinst -y treesizefree
-  # cinst -y classic-shell
   cinst -y everything
   cinst -y hashcheck
   cinst -y foobar2000
@@ -69,7 +65,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
   cinst -y putty
   cinst -y kitty
-  # cinst -y ccleaner
 #endregion
 
 #region Browsers
@@ -81,6 +76,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
   #cinst -y cmder
   cinst -y notepadplusplus
   cinst -y notepad2-mod
+  cinst -y neovim
+  cinst -y alacritty
+  cinst -y ripgrep
   cinst -y winmerge
   cinst -y meld
   cinst -y hxd
