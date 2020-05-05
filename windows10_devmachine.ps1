@@ -79,6 +79,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y neovim
   cinst -y alacritty
   cinst -y ripgrep
+  cinst -y universal-ctags
   cinst -y winmerge
   cinst -y meld
   cinst -y hxd
