@@ -109,7 +109,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region nirsoft
-  cinst -y csvfileview
+  # cinst -y csvfileview # checksum is not matching atm
   cinst -y bluescreenview
   cinst -y hashmyfiles
 #endregion
