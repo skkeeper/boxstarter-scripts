@@ -55,7 +55,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y irfanviewplugins
   cinst -y sumatrapdf
   cinst -y defraggler
-  cinst -y treesizefree
   cinst -y everything
   cinst -y hashcheck
   cinst -y foobar2000
@@ -68,8 +67,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region Browsers
-  cinst -y google-chrome
-  cinst -y firefox --params "l=en-GB"
+  cinst -y googlechrome
+  cinst -y firefox --params "/l:en-GB"
 #endregion
 
 #region devTools
