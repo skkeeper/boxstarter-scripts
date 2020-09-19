@@ -40,7 +40,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region Runtimes
-  cinst -y flashplayerplugin
   cinst -y openjdk
   cinst -y nodejs
   cinst -y python
@@ -72,7 +71,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region devTools
-  #cinst -y cmder
   cinst -y notepadplusplus
   cinst -y notepad2-mod
   cinst -y neovim
@@ -93,11 +91,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #region goingIntoTheExtras
   cinst -y chocolateygui
   cinst -y powertoys
-  #cinst -y hexchat
   cinst -y libreoffice-fresh
   cinst -y FoxitReader
   cinst -y paint.net
-  #cinst -y sharex
   cinst -y unchecky
   cinst -y ffmpeg
   cinst -y youtube-dl
@@ -109,7 +105,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #endregion
 
 #region nirsoft
-  # cinst -y csvfileview # checksum is not matching atm
+  cinst -y csvfileview
   cinst -y bluescreenview
   cinst -y hashmyfiles
 #endregion
