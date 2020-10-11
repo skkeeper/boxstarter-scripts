@@ -87,6 +87,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y maven
   cinst -y Bat
   cinst -y CLOC
+  cinst -y csvfileview
+  cinst -y rapidee
 #endregion
 
 #region goingIntoTheExtras
