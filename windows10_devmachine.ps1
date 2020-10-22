@@ -111,6 +111,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y csvfileview
   cinst -y bluescreenview
   cinst -y hashmyfiles
+  cinst -y dllexp
 #endregion
 
 # Make sure some windows update didn't creep on us after installing all
