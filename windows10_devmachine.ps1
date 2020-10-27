@@ -47,6 +47,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #region essentials
   cinst -y 7zip
+  cinst -y peazip
   cinst -y vlc
   cinst -y mpv
   cinst -y mpc-hc
