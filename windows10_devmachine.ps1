@@ -48,6 +48,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #region essentials
   cinst -y 7zip
   cinst -y vlc
+  cinst -y mpv
   cinst -y mpc-hc
   cinst -y sysinternals
   cinst -y irfanview
@@ -105,6 +106,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   #cinst -y patheditor
   cinst -y winscp
   cinst -y quicklook
+  cinst -y streamlink
 #endregion
 
 #region nirsoft
