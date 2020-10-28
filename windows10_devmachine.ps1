@@ -50,7 +50,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y peazip
   cinst -y vlc
   cinst -y mpv
-  cinst -y mpc-hc
   cinst -y sysinternals
   cinst -y irfanview
   cinst -y irfanviewplugins
@@ -63,6 +62,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y mediainfo-cli
   cinst -y mediatab
   cinst -y rsync # the ssh command that comes with this is kinda broken, alias ssh=your old ssh binary (cmder for example)
+  cinst -y rclone
   cinst -y putty
   cinst -y kitty
 #endregion
@@ -89,7 +89,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y maven
   cinst -y Bat
   cinst -y CLOC
-  cinst -y csvfileview
   cinst -y rapidee
 #endregion
 
