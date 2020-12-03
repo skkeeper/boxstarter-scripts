@@ -75,6 +75,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #region devTools
   cinst -y notepadplusplus
   cinst -y notepad2-mod
+  cinst -y git --params "/NoShellIntegration"
   cinst -y neovim
   cinst -y alacritty
   cinst -y ripgrep
