@@ -19,7 +19,7 @@ powercfg -change -standby-timeout-ac 0
 powercfg -h off
 
 Set-BoxstarterTaskbarOptions -Size Small -Dock Top
-#Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess
+Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
 # Disables the Bing Internet Search when searching from the search field in the Taskbar or Start Menu.
@@ -97,13 +97,13 @@ if (Test-PendingReboot) { Invoke-Reboot }
   cinst -y chocolateygui
   cinst -y powertoys
   cinst -y libreoffice-fresh
-  cinst -y FoxitReader
+  #cinst -y FoxitReader
   cinst -y paint.net
   cinst -y unchecky
   cinst -y ffmpeg
   cinst -y youtube-dl
   cinst -y Wget
-  cinst -y icaros
+  #cinst -y icaros
   #cinst -y patheditor
   cinst -y winscp
   cinst -y quicklook
