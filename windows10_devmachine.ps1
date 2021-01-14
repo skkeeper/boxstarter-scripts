@@ -5,9 +5,9 @@
 # The following settings will ask you for your windows password and then
 # successfuly reboot the machine everytime it needs to. After Boxstarter is
 # done autologin won't be enabled.
-$Boxstarter.RebootOk=$true    # Allow reboots?
-$Boxstarter.NoPassword=$false # Is this a machine with no login password?
-$Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a reboot
+#$Boxstarter.RebootOk=$true    # Allow reboots?
+#$Boxstarter.NoPassword=$false # Is this a machine with no login password?
+#$Boxstarter.AutoLogin=$true   # Save my password securely and auto-login after a reboot
 
 # Allow running PowerShell scripts
 Update-ExecutionPolicy Unrestricted
@@ -18,7 +18,7 @@ powercfg -change -monitor-timeout-ac 0
 powercfg -change -standby-timeout-ac 0
 powercfg -h off
 
-#Set-BoxstarterTaskbarOptions -Size Small -Lock -Dock Top
+Set-BoxstarterTaskbarOptions -Size Small -Dock Top
 #Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowFullPathInTitleBar -DisableShowRecentFilesInQuickAccess -DisableShowFrequentFoldersInQuickAccess
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirst
 
